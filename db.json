@@ -1,0 +1,28 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Deploy to heroku",
+      "day": "29th March 2022",
+      "reminder": true
+    },
+    {
+      "text": "See the Dentist",
+      "day": "4th April 2022",
+      "reminder": true,
+      "id": 4
+    },
+    {
+      "text": "Buy Groceries after work",
+      "day": "7th June 2022",
+      "reminder": true,
+      "id": 5
+    },
+    {
+      "text": "Buy new DokaDoka",
+      "day": "15th April 2022",
+      "reminder": true,
+      "id": 6
+    }
+  ]
+}
