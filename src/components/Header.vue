@@ -1,7 +1,7 @@
 <template>
     <header>
         <h1>{{ title }}</h1>
-        <Button @toggle-add-task-form="this.$emit('toggle-add-task-form')" :text="showAddTaskForm ? 'Close' : 'Add Task'" :color="showAddTaskForm ? 'red' : 'green'" />
+        <Button v-show="homePage" @toggle-add-task-form="this.$emit('toggle-add-task-form')" :text="showAddTaskForm ? 'Close' : 'Add Task'" :color="showAddTaskForm ? 'red' : 'green'" />
     </header>
 </template>
 
@@ -16,6 +16,13 @@ export default {
     props: {
         title: String,
         showAddTaskForm: Boolean
+    },
+    computed: {
+        homePage() {
+            return true ?
+            (this.$route.path === "/")
+            :false
+        }
     },
     emits: ['toggle-add-task-form']
 }
